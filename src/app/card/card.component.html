@@ -1,0 +1,2 @@
+<img (click)="addCard()" *ngIf="!!card.image_uris" src="{{card.image_uris.png}}">
+<img (click)="addCard()" *ngIf="!!card.card_faces" src="{{card.card_faces[0].image_uris.png}}">

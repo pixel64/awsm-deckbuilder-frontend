@@ -1,0 +1,23 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: darkgray;
+    opacity: .5;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

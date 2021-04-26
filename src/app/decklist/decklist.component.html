@@ -1,0 +1,3 @@
+<ul class="decklist">
+  <li *ngFor="let pile of cardList">{{pile.card.name}} {{pile.count}} <button (click)="remove(pile)">remove</button></li>
+</ul>

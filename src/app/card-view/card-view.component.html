@@ -1,0 +1,9 @@
+<div class="content">
+  <div class="loading" *ngIf="loading">lädt</div>
+  <div class="cards">
+    <app-card *ngFor="let card of cardList" [card]="card"></app-card>
+  </div>
+  <div>
+    <app-decklist></app-decklist>
+  </div>
+</div>

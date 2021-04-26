@@ -1,0 +1,9 @@
+<div *ngIf="loggedIn">{{name}} <button (click)="logout()">Logout</button></div>
+<div *ngIf="!loggedIn">
+    <label>Name: </label>
+    <input #name placeholder="name">
+    <label>Passwort: </label>
+    <input type="password" #password placeholder="password">
+    <button (click)="login(name.value, password.value)">Einloggen</button>
+    <a routerLink="/registration">Registrieren</a>
+</div>

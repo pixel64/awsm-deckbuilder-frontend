@@ -1,0 +1,6 @@
+<app-login></app-login>
+<div class="searchblock">
+    <input #name (keydown.enter)="searchCard(name.value)" type="search" />
+    <button class="search-btn" (click)="searchCard(name.value)">SUCHEN</button>
+</div>
+<app-card-view [cards]="cardList" [loading]="loading"></app-card-view>
